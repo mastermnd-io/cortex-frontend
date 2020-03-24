@@ -21,12 +21,7 @@ jobs:
     - name: Build                                
       run: hugo
 
-    - name: Validate Html
-      uses: Cyb3r-Jak3/html5validator-action@v0.4
-      with:
-        root: public/
-
-    - uses: actions/upload-artifact@v1
-      with:
-        name: log
-        path: log.log
+#    - name: Validate Html
+#      uses: Cyb3r-Jak3/html5validator-action@v0.4
+#      with:
+#        root: public/
