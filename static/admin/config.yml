@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: mastermndio/netlify-cms
+  repo: mastermnd-io/cortex-frontend
   open_authoring: true
   branch: master # Branch to update (optional; defaults to master)
 publish_mode: editorial_workflow
