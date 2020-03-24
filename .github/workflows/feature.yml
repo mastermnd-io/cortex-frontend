@@ -25,7 +25,9 @@ jobs:
       uses: Cyb3r-Jak3/html5validator-action@v0.4
       with:
         root: public/
-    - uses: actions/upload-artifact@v1
+
+    -name: Log file gen
+     uses: actions/upload-artifact@v1
       with:
         name: log
         path: htmloutput.log
