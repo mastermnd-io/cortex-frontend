@@ -2,6 +2,7 @@ backend:
   name: github
   repo: mastermndio/netlify-cms
   open_authoring: true
+  publish_mode: editorial_workflow
   branch: master # Branch to update (optional; defaults to master)
 media_folder: static/img
 public_folder: /img
