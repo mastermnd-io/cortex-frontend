@@ -1,0 +1,27 @@
+name: FeatureBranch CI
+
+on:                                              
+  push:
+    branches:
+    - '*'
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@v1                  
+      with:
+        submodules: true
+
+    - name: Setup Hugo                           
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: '0.62.0'
+
+    - name: Build                                
+      run: hugo
+
+#    - name: Validate Html
+#      uses: Cyb3r-Jak3/html5validator-action@v0.4
+#      with:
+#        root: public/
