@@ -6,12 +6,15 @@ on:
     - '*'
 
 jobs:
-  build-deploy:
+  build:
     runs-on: ubuntu-18.04
     steps:
     - uses: actions/checkout@v1                  
       with:
         submodules: true
+
+    - name: yaml-lint
+      uses: ibiqlik/action-yamllint@master
 
     - name: Setup Hugo                           
       uses: peaceiris/actions-hugo@v2
