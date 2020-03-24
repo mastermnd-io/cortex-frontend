@@ -13,9 +13,6 @@ jobs:
       with:
         submodules: true
 
-    - name: yaml-lint
-      uses: ibiqlik/action-yamllint@master
-
     - name: Setup Hugo                           
       uses: peaceiris/actions-hugo@v2
       with:
@@ -24,7 +21,11 @@ jobs:
     - name: Build                                
       run: hugo
 
-#    - name: Test Files
-#      uses: Cyb3r-Jak3/html5validator-action@v0.4
-#      with:
-#        root: public/
+    - name: Validate Html
+      uses: Cyb3r-Jak3/html5validator-action@v0.4
+      with:
+        root: public/
+    - uses: actions/upload-artifact@v1
+      with:
+        name: log
+        path: htmloutput.log
