@@ -10,7 +10,7 @@ collections:
   - name: 'category'
     label: 'Category'
     folder: 'content/category'
-    create: false
+    create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: false
