@@ -7,6 +7,11 @@ publish_mode: editorial_workflow
 media_folder: static/img
 public_folder: /img
 collections:
+  - name: 'category'
+    label: 'Category'
+    folder: 'content/category'
+    create: false
+
   - name: 'courses'
     label: 'Courses'
     folder: 'content/courses'
