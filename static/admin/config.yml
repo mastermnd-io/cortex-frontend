@@ -25,7 +25,7 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: 'Category', name: 'course_category', widget: 'relation', collection: 'category', searchFields: 'name', valueField: 'name'}
+      - { label: 'Category', name: 'course_category', widget: 'relation', collection: 'category', searchFields: 'title', valueField: 'tile'}
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'string' }
         # - name: 'blog'
