@@ -1,10 +1,10 @@
-FROM golang
+FROM woahbase/alpine-hugo
 
-RUN mkdir $HOME/src && \
-    cd $HOME/src && \
-    git clone https://github.com/gohugoio/hugo.git && \
-    cd hugo && \
-    go install
+# RUN mkdir $HOME/src && \
+#     cd $HOME/src && \
+#     git clone https://github.com/gohugoio/hugo.git && \
+#     cd hugo && \
+#     go install
 
 RUN mkdir /app
 
