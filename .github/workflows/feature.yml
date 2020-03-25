@@ -11,7 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1                  
       with:
-        submodules: true
+        submodules: false
 
     - name: Setup Hugo                           
       uses: peaceiris/actions-hugo@v2
@@ -19,7 +19,7 @@ jobs:
         hugo-version: '0.62.0'
 
     - name: Build                                
-      run: hugo server
+      run: hugo
 
 #    - name: Validate Html
 #      uses: Cyb3r-Jak3/html5validator-action@v0.4
