@@ -11,10 +11,15 @@ collections:
     label: 'Category'
     folder: 'content/category'
     create: false
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
 
   - name: 'courses'
     label: 'Courses'
-    folder: 'content/courses'
+    folder: 'content/category/courses'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
