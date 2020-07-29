@@ -35,6 +35,25 @@ collections:
       - label: 'Title'
         name: 'title'
         widget: 'string'
+  
+  - name: 'lessons'
+    label: 'Lessons'
+    folder: 'content/category/lessons'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - label: 'Courses'
+        name: 'lesson_course'
+        widget: 'relation'
+        collection: 'courses'
+        searchFields: ['title']  
+        valueField: 'title'
+        
+      - label: 'Title'
+        name: 'title'
+        widget: 'string'
 
       - label: 'Description'
         name: 'description'
