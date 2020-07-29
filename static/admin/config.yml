@@ -38,7 +38,7 @@ collections:
   
   - name: 'lessons'
     label: 'Lessons'
-    folder: 'content/category/lessons'
+    folder: 'content/category/courses/lessons'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
