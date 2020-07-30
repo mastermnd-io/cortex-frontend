@@ -1,0 +1,24 @@
+courseTitle:
+  title: "String"
+  description: "String"
+  tagline: "String"
+  video: "String"
+  links: "String"
+
+courseTopics:
+  - title: "String"
+    tagline: "String"
+    description: "String"
+    video: "String"
+    documentation: "String"
+    weight: Integer
+  - title: "String"
+    tagline: "String"
+    description: "String"
+    video: "String"
+    documentation: "String"
+    weight: Integer
+  
+  
+
+  
